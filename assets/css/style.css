@@ -72,6 +72,12 @@ section {
   margin-left: 24px;
 }
 
+.nav__item:hover {
+  color: #e99c2e;
+  border: none;
+  cursor: pointer;
+}
+
 .nav__item:first-child {
   margin-left: 0;
 }
@@ -83,7 +89,7 @@ section {
 .button {
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -96,9 +102,20 @@ section {
   background-color: #e99c2e;
 }
 
+@keyframes carousel-backround {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #f8f9fd;
+  }
+}
+
 .carousel {
   flex: 1;
   background-color: #f8f9fd;
+  animation-name: carousel-backround;
+  animation-duration: 4s;
 }
 
 .headline {
