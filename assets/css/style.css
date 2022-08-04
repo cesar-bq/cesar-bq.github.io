@@ -1,247 +1,147 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body,
+ul,
+li,
+p,
+a,
+label,
+input,
+div {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px !important;
+  font-weight: 300 !important;
 }
 
-body {
-  height: 100%;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1.2rem;
-  display: grid;
-  grid-template:
-    "header" auto
-    "main" 1fr
-    "footer" auto;
-}
-
-header {
-  grid-area: header;
-  background-color: #f8f9fd;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-  text-align: center;
-  background-color: #f8f9fd;
-}
-
-section {
-  padding: 24px 10% 24px 10%;
-  margin: 0 auto;
-}
-
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 16px;
-}
-
-.nav {
-  flex-grow: 1;
-}
-
-.nav__logo {
-  text-decoration: none;
-  font-size: 24px;
-  color: #616060;
-  font-weight: 600;
-}
-
-.span__logo-color {
+.text-main-color {
   color: #e99c2e;
 }
 
-.header__logo {
-  text-decoration: none;
-  color: #616060;
-  font-weight: 600;
+.bg-light {
+  background-color: #f8f9fd;
 }
 
-.nav__item {
-  text-decoration: none;
-  color: #616060;
-  margin-left: 24px;
+#card-img-top {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
 }
 
-.nav__item:hover {
+.btn {
+  background-color: #e99c2e;
+  color: #fff;
+}
+
+.btn:hover {
   color: #e99c2e;
-  border: none;
-  cursor: pointer;
 }
 
-.nav__item:first-child {
-  margin-left: 0;
+.nav-link {
+  font-size: 20px !important;
+  font-weight: 100 !important;
 }
 
-.nav__item--active {
+.h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+  color: #e99c2e;
+}
+.h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px !important;
+  font-weight: 300;
+}
+.h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px !important;
+}
+
+.logo {
+  font-weight: 500 !important;
+}
+
+#nav_top {
+  min-height: 40px;
+}
+#nav_top * {
+  font-size: 0.9em !important;
+}
+#main_nav a {
+  color: #212934;
+}
+#main_nav a:hover {
+  color: #e99c2e;
+}
+#main_nav .navbar .nav-icon {
+  margin-right: 20px;
+}
+
+#ecommerce-custom-carousel .carousel-indicators li {
+  margin-top: -50px;
+  background-color: black;
+}
+#ecommerce-custom-carousel .carousel-control-next i,
+#ecommerce-custom-carousel .carousel-control-prev i {
+  color: black !important;
+  font-size: 2.8em !important;
+}
+
+.carousel-item {
+  transition: transform 3s ease-in-out;
+}
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 0.5s;
+}
+
+#custom-footer a {
   color: #000;
 }
-
-.button {
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+#custom-footer a:hover {
+  color: #e99c2e;
 }
-
-.button__main {
+#custom-footer ul.footer-link-list li {
+  padding-top: 10px;
+}
+#custom-footer ul.footer-icons li {
+  width: 2.6em;
+  height: 2.6em;
+  line-height: 2.6em;
   background-color: #e99c2e;
 }
 
-@keyframes carousel-backround {
-  from {
-    background-color: white;
-  }
-  to {
-    background-color: #f8f9fd;
-  }
+#custom-footer ul.footer-icons li:hover {
+  background-color: #e99c2e;
+  transition: 0.5s;
+}
+#custom-footer ul.footer-icons li:hover i {
+  color: #000;
+  transition: 0.5s;
+}
+#custom-footer .border-light {
+  border-color: #000 !important;
 }
 
-.carousel {
-  flex: 1;
-  background-color: #f8f9fd;
-  animation-name: carousel-backround;
-  animation-duration: 4s;
+.icon-colored {
+  background-color: #e99c2e;
+  color: #fff;
 }
 
-.headline {
-  font-size: 52px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
+.icon-light {
+  background-color: #fff;
+  color: #e99c2e;
 }
 
-.description {
-  color: #828282;
-  margin: 0;
-  padding: 0;
-  margin-top: 24px;
-  margin-bottom: 40px;
+/* TODO A NO OLVIDAR ESTO */
+svg {
+  color: black;
+  width: 16px;
+  height: 16px;
 }
 
-.section__title {
-  margin-bottom: 40px;
-  font-size: 40px;
-  text-align: center;
-  font-weight: 200;
-}
-
-.main-content {
-  flex: 1;
-}
-
-.main__img img {
-  width: 100%;
-  height: auto;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-
-.card {
-  background-color: #f8f9fd;
-  width: 250px;
-  min-height: 320px;
-  text-align: center;
-  height: auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  padding: 20px;
-  gap: 10px;
-  transition: all 0.3s ease-in;
-}
-
-.card__img {
-  width: 100%;
-}
-
-.card__img img {
-  max-height: 199px;
-}
-
-.card__title {
-  text-decoration: none;
-  color: #616060;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.card__description {
-  color: #828282;
-}
-
-.sitemap {
-  display: flex;
-  flex-direction: column;
-  background-color: #f8f9fd;
-}
-
-.sitemap__item {
-  padding: 1.5rem;
-}
-
-.sitemap__title {
-  color: #616060;
-  font-weight: 600;
-}
-
-.socials--item {
-  color: #bdbdbd;
-  margin-right: 12px;
-}
-
-.copy {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    padding: 0 15% 3rem 15%;
-  }
-  .carousel {
-    display: flex;
-    align-items: center;
-    padding: 0 15% 3rem 15%;
-  }
-  .card {
-    flex-wrap: wrap;
-    flex-grow: 2;
-  }
-  .cards {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .sitemap {
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
-  }
-
-  .sitemap__item {
-    padding: 3rem;
-  }
+.svg-lg {
+  width: 40px;
+  height: 40px;
+  color: #e99c2e;
 }
