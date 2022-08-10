@@ -1,0 +1,38 @@
+#custom-footer {
+  a {
+    color: $color-black;
+  }
+
+  a:hover {
+    color: $color-main;
+  }
+
+  ul.footer-link-list {
+    li {
+      padding-top: 10px;
+    }
+  }
+
+  ul.footer-icons {
+    li {
+      width: 2.6em;
+      height: 2.6em;
+      line-height: 2.6em;
+      background-color: $color-main;
+    }
+
+    li:hover {
+      background-color: $color-main;
+      transition: 0.5s;
+
+      i {
+        color: $color-black;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .border-light {
+    border-color: $color-black !important;
+  }
+}

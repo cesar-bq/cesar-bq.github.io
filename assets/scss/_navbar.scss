@@ -1,0 +1,30 @@
+@import "variables";
+
+.nav-link {
+  font-size: 20px !important;
+  font-weight: 100 !important;
+}
+
+#nav_top {
+  min-height: 40px;
+
+  * {
+    font-size: 0.9em !important;
+  }
+}
+
+#main_nav {
+  a {
+    color: $color-font-navbar;
+  }
+
+  a:hover {
+    color: $color-main;
+  }
+
+  .navbar {
+    .nav-icon {
+      margin-right: 20px;
+    }
+  }
+}

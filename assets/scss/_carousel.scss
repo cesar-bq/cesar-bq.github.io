@@ -1,0 +1,29 @@
+@import "variables";
+
+#ecommerce-custom-carousel {
+  .carousel-control-next,
+  .carousel-control-prev {
+    i {
+      color: $color-black !important;
+      font-size: 2.8em !important;
+    }
+  }
+
+  .carousel-indicators {
+    li {
+      margin-top: -50px;
+      background-color: $color-black;
+    }
+  }
+}
+
+.carousel-item {
+  transition: transform 3s ease-in-out;
+}
+
+.carousel-fade {
+  .active.carousel-item-start,
+  .active.carousel-item-end {
+    transition: opacity 0s 0.5s;
+  }
+}
