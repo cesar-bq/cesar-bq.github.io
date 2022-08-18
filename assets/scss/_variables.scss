@@ -1,7 +1,10 @@
-$color-main: #e99c2e;
-$color-white: #fff;
-$color-black: #000;
-$color-font-navbar: #212934;
 $bg-color-light: #f8f9fd;
 $border-main: #f3f3f3;
 $default-font-family: "Roboto", sans-serif;
+
+$color: (
+  main: #e99c2e,
+  white: #fff,
+  black: #000,
+  navbar: #212934,
+);

@@ -4,7 +4,7 @@
   .carousel-control-next,
   .carousel-control-prev {
     i {
-      color: $color-black !important;
+      color: map-get($color, black) !important;
       font-size: 2.8em !important;
     }
   }
@@ -12,7 +12,7 @@
   .carousel-indicators {
     li {
       margin-top: -50px;
-      background-color: $color-black;
+      background-color: map-get($color, black);
     }
   }
 }
